@@ -1,0 +1,10 @@
+APP_CONFIG:
+  apiUrl: /api/rest
+  intlPath: /assets/i18n
+  yearFilter: ['2017', '2016', '2015']
+
+WEBPACK:
+  proxy:
+    "/api":
+      target: http://localhost:8080
+      secure: false

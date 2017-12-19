@@ -1,0 +1,12 @@
+<div class="dropdown" [ngClass]="class">
+  <label [for]="id">{{label | formattedMessage}}</label>
+  <button class="btn btn-camilla dropdown-toggle" type="button" [id]="id" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    {{'VIDEO.' + selected | formattedMessage}}
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" [attr.aria-labelledby]="id">
+    <li (click)="setSelected('ALL')"><a>{{'VIDEO.ALL' | formattedMessage}}</a></li>
+    <li role="separator" class="divider"></li>
+    <li *ngFor="let year of options" (click)="setSelected(year)"><a>{{'VIDEO.' + year | formattedMessage}}</a></li>
+  </ul>
+</div>

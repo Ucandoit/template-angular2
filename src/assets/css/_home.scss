@@ -1,0 +1,51 @@
+home {
+  .camilla-title {
+    width: 100%;
+    height: 250px;
+    border: 1px solid $primary-color;
+    line-height: 250px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  h2 {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $primary-color;
+
+    .more {
+      position: absolute;
+      right: 0;
+      color: $primary-color;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 0 10px;
+      border: 1px solid;
+      cursor: pointer;
+    }
+
+    .more:hover {
+      text-decoration: none;
+    }
+  }
+
+  .profile-photo {
+    width: 100%;
+    border: 1px solid $primary-color;
+  }
+
+  .profile {
+    div {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .name {
+      font-size: 30px;
+    }
+  }
+
+}

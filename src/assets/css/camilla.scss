@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'uicomponents';
+@import 'home';
+@import 'videos';
+
+body {
+  background: $bg-color none repeat scroll 0 0;
+  color: $primary-color;
+  font-family: Arial, "Microsoft YaHei" !important;
+}
+
+/* HEADER */
+.navbar-header {
+  a {
+    color: $primary-color;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    line-height: 30px;
+    height: 60px;
+  }
+
+  .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .icon-bar {
+    background: $primary-color;
+  }
+}
+
+.nav {
+  li {
+    a {
+      color: $primary-color;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    a:focus {
+      background: none;
+    }
+
+    a:hover {
+      background: $primary-color;
+      color: $bg-color;
+    }
+  }
+}
+
+/* MAIN */
+main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+/* SEPARATOR */
+hr {
+  border-color: $primary-color;
+}
+
+/* BUTTON */
+.btn-camilla {
+  color: $bg-color;
+  background: $primary-color;
+  border: none;
+}
+
+.btn-camilla:hover:focus {
+  outline: none;
+}
+
+.btn-camilla:active {
+  box-shadow: none;
+}
